@@ -33,6 +33,17 @@
 > 且开始用 Python 和 C++ 两种语言
 
 
+## 2019.09.17
+
+> 开始，[array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
+
+| #    | 题目                                                         | 题解                                                         | 难度 | 时间       | tag      |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---------- | -------- |
+| 27   | [移动元素](https://leetcode-cn.com/problems/remove-element/) | [Python](./20190917/20190917/readme.md#Python) [C++](./20190917/20190917/readme.md#C++) | ★    | 2019.09.17 |          |
+| 35   | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [Python](./20190917/20190917/readme.md#Python-1) [C++](./20190917/20190917/readme.md#C++-1) | ★    | 2019.09.17 | 二分查找 |
+
+
+
 ## 2019.09
 
 ### 题目列表
