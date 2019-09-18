@@ -18,24 +18,17 @@
 
 using namespace std;
 
-class Solution
-{
-public:
-    int searchInsert(vector<int> &nums, int target)
-    {
+class Solution {
+   public:
+    int searchInsert(vector<int> &nums, int target) {
         int length = nums.size();
-        if (length == 0)
-            return 0;
+        if (length == 0) return 0;
         int left = 0, right = length;
-        while (left < right)
-        {
+        while (left < right) {
             int mid = left + (right - left) / 2;
-            if (nums[mid] < target)
-            {
+            if (nums[mid] < target) {
                 left = mid + 1;
-            }
-            else
-            {
+            } else {
                 right = mid;
             }
         }
@@ -43,8 +36,7 @@ public:
     }
 };
 
-int main(int argc, char const *argv[])
-{
+int main(int argc, char const *argv[]) {
     vector<int> a{1, 3, 5, 6};
     std::cout << Solution().searchInsert(a, 0) << std::endl;
     return 0;
