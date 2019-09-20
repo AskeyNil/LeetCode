@@ -45,7 +45,7 @@
 | 66   | [加一](https://leetcode-cn.com/problems/plus-one/)           | [Python](./20190917/20190918/readme.md#Python-1)✅ [C++](./20190917/20190918/readme.md#C-1)✅ | ★    | 2019.09.18 |                  |
 | 88   | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [Python](./20190917/20190919/readme.md#Python)✅ [C++](./20190917/20190919/readme.md#C)✅ | ★    | 2019.09.19 | 双指针           |
 | 118  | [杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/) | [Python](./20190917/20190920/readme.md#Python)✅ [C++](./20190917/20190920/readme.md#C)✅ | ★    | 2019.09.20 | 动态规划，递归   |
-| 119  | [杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/) |                                                              | ★    | 2019.09.20 |                  |
+| 119  | [杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/) | [Python](./20190917/20190920/readme.md#Python-1)✅ [C++](./20190917/20190920/readme.md#C-1)✅ | ★    | 2019.09.20 | 公式法           |
 
 
 
