@@ -18,8 +18,7 @@
 >
 > 输出: [1,2,2,3,5,6]
 
-
-## Python
+## [Python](./88.%20合并两个有序数组.py)
 ### 暴力合并排序法
 ``` python
 class Solution:
@@ -30,7 +29,7 @@ class Solution:
 1. 双指针法(用 C++ 实现)
 2. Python 实现参考[官方题解](https://leetcode-cn.com/problems/merge-sorted-array/solution/he-bing-liang-ge-you-xu-shu-zu-by-leetcode/)
 
-## C++
+## [C++](./88.%20合并两个有序数组.cc)
 ### 双指针法(从前往后)
 ``` C++
 class Solution {
