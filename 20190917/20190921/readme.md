@@ -397,3 +397,82 @@ class Solution {
 };
 ```
 
+# 217. 存在重复元素
+
+## [题目](https://leetcode-cn.com/problems/contains-duplicate/)
+
+## Python
+
+### 暴力法
+
+```python
+class Solution:
+    def containsDuplicate(self, nums: [int]) -> bool:
+        return len(set(nums)) < len(nums)
+      
+```
+
+### 哈希法
+
+```python
+class Solution:
+    def containsDuplicate(self, nums: [int]) -> bool:
+        dic = {}
+        for num in nums:
+            if num in dic:
+                return True
+            else:
+                dic[num] = 0
+        return False
+```
+
+### 排序法
+
+```python
+class Solution:
+    def containsDuplicate(self, nums: [int]) -> bool:
+        nums.sort()
+        for index in range(len(nums) - 1):
+            if nums[index] == nums[index + 1]:
+                return True
+        return False
+```
+
+
+
+## C++
+
+### 哈希法
+
+```c++
+class Solution {
+   public:
+    bool containsDuplicate(vector<int>& nums) {
+        map<int, int> dic;
+        for (int num : nums) {
+            if (dic.count(num) == 0)
+                dic[num] = 0;
+            else
+                return true;
+        }
+        return false;
+    }
+};
+```
+
+### 排序法
+
+```c++
+class Solution {
+   public:
+    bool containsDuplicate(vector<int>& nums) {
+        if (nums.empty()) return false;
+        sort(nums.begin(), nums.end());
+        for (auto i = 0; i < nums.size() - 1; i++) {
+            if (nums[i] == nums[i + 1]) return true;
+        }
+        return false;
+    }
+};
+```
+
