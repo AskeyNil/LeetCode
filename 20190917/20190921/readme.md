@@ -161,3 +161,50 @@ class Solution {
 };
 ```
 
+
+
+# 167. 两数之和 II - 输入有序数组
+
+## [题目](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/)
+
+## [Python](./167.%20两数之和%20II%20-%20输入有序数组.py)
+
+#### 哈希表
+
+``` python
+class Solution:
+    def twoSum(self, numbers: [int], target: int) -> [int]:
+        dic = {}
+        for index, number in enumerate(numbers):
+            dif = target - number
+            if dif in dic:
+                return [dic[dif] + 1, index + 1]
+            dic[number] = index
+
+```
+
+
+
+### [C++](./167.%20两数之和%20II%20-%20输入有序数组.cc)
+
+#### 双指针
+
+``` c++
+class Solution {
+   public:
+    vector<int> twoSum(vector<int>& numbers, int target) {
+        int pre = 0, tail = numbers.size() - 1;
+        while (pre < tail) {
+            if (numbers[pre] + numbers[tail] == target) {
+                return {pre + 1, tail + 1};
+            } else if (numbers[pre] + numbers[tail] > target) {
+                tail -= 1;
+            } else {
+                pre += 1;
+            }
+        }
+        return {};
+    }
+};
+```
+

@@ -48,6 +48,7 @@
 | 119  | [杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/) | [Python](./20190917/20190920/readme.md#Python-1)✅ [C++](./20190917/20190920/readme.md#C-1)✅ | ★    | 2019.09.20 | 公式法           |
 | 121  | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [Python](./20190917/20190921/readme.md#Python)✅ [C++](./20190917/20190921/readme.md#C)✅ | ★    | 2019.09.21 | 动态规划         |
 | 122  | [买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Python](./20190917/20190921/readme.md#Python-1)✅ [C++](./20190917/20190921/readme.md#C-1)✅ | ★    | 2019.09.21 |                  |
+| 167  | [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./20190917/20190921/readme.md#Python-2)✅ [C++](./20190917/20190921/readme.md#C-2)✅ | ★    | 2019.09.21 | 哈希表、双指针   |
 
 
 
