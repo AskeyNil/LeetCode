@@ -208,3 +208,108 @@ class Solution {
 };
 ```
 
+# 169. 求众数
+
+## [题目](https://leetcode-cn.com/problems/majority-element/)
+
+给定一个大小为 n 的数组，找到其中的众数。众数是指在数组中出现次数大于 ⌊ n/2 ⌋ 的元素。
+
+你可以假设数组是非空的，并且给定的数组总是存在众数。
+
+示例 1:
+
+> 输入: [3,2,3]
+>
+> 输出: 3
+
+示例 2:
+
+> 输入: [2,2,1,1,1,2,2]
+>
+> 输出: 2
+
+
+
+## [Python](./169.%20求众数.py)
+
+#### 一次哈希表
+
+```python
+class Solution:
+    def majorityElement(self, nums: [int]) -> int:
+        length = len(nums)
+        if length == 1:
+            return nums[0]
+        dic = {}
+        for num in nums:
+            if num in dic:
+                dic[num] += 1
+                if dic[num] > length / 2:
+                    return num
+            else:
+                dic[num] = 1
+```
+
+#### 排序法
+
+```python
+class Solution:
+    def majorityElement(self, nums: [int]) -> int:
+        return sorted(nums)[len(nums) // 2]
+```
+
+#### *Boyer-Moore 投票算法*
+
+```python
+class Solution:
+    def majorityElement(self, nums: [int]) -> int:
+        count = 0
+        candidate = None
+        for num in nums:
+            if count == 0:
+                candidate = num
+            count += 1 if num == candidate else - 1
+        return candidate
+```
+
+
+
+## [Python](./169.%20求众数.cc)
+
+#### Boyer-Moore 投票算法
+
+```c++
+class Solution {
+   public:
+    int majorityElement(vector<int>& nums) {
+        int count = 0, candidate = nums[0];
+        for (auto num : nums) {
+            if (count == 0) candidate = num;
+            count += num == candidate ? 1 : -1;
+        }
+        return candidate;
+    }
+};
+```
+
+#### 一次哈希表
+
+```c++
+class Solution {
+   public:
+    int majorityElement(vector<int>& nums) {
+        map<int, int> dic;
+        int length = nums.size();
+        for (auto num : nums) {
+            if (dic.count(num) == 0) {
+                dic[num] = 1;
+            } else {
+                dic[num] += 1;
+            }
+            if (dic[num] > length / 2.0) return num;
+        }
+        return nums[0];
+    }
+};
+```
+

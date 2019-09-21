@@ -37,18 +37,22 @@
 
 > 开始，[array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 
-| #    | 题目                                                         | 题解                                                         | 难度 | 时间       | tag              |
-| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---------- | ---------------- |
-| 27   | [移动元素](https://leetcode-cn.com/problems/remove-element/) | [Python](./20190917/20190917/readme.md#Python)✅ [C++](./20190917/20190917/readme.md#C)✅ | ★    | 2019.09.17 |                  |
-| 35   | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [Python](./20190917/20190917/readme.md#Python-1)✅ [C++](./20190917/20190917/readme.md#C-1)✅ | ★    | 2019.09.17 | 二分查找         |
-| 53   | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [Python](./20190917/20190918/readme.md#Python)✅ [C++](./20190917/20190918/readme.md#C)✅ | ★    | 2019.09.18 | 分治法、动态规划 |
-| 66   | [加一](https://leetcode-cn.com/problems/plus-one/)           | [Python](./20190917/20190918/readme.md#Python-1)✅ [C++](./20190917/20190918/readme.md#C-1)✅ | ★    | 2019.09.18 |                  |
-| 88   | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [Python](./20190917/20190919/readme.md#Python)✅ [C++](./20190917/20190919/readme.md#C)✅ | ★    | 2019.09.19 | 双指针           |
-| 118  | [杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/) | [Python](./20190917/20190920/readme.md#Python)✅ [C++](./20190917/20190920/readme.md#C)✅ | ★    | 2019.09.20 | 动态规划，递归   |
-| 119  | [杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/) | [Python](./20190917/20190920/readme.md#Python-1)✅ [C++](./20190917/20190920/readme.md#C-1)✅ | ★    | 2019.09.20 | 公式法           |
-| 121  | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [Python](./20190917/20190921/readme.md#Python)✅ [C++](./20190917/20190921/readme.md#C)✅ | ★    | 2019.09.21 | 动态规划         |
-| 122  | [买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Python](./20190917/20190921/readme.md#Python-1)✅ [C++](./20190917/20190921/readme.md#C-1)✅ | ★    | 2019.09.21 |                  |
-| 167  | [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./20190917/20190921/readme.md#Python-2)✅ [C++](./20190917/20190921/readme.md#C-2)✅ | ★    | 2019.09.21 | 哈希表、双指针   |
+| #    | 题目                                                         | 题解                                                         | 难度 | 时间       | tag                      |
+| ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---------- | ------------------------ |
+| 27   | [移动元素](https://leetcode-cn.com/problems/remove-element/) | [Python](./20190917/20190917/readme.md#Python)✅ [C++](./20190917/20190917/readme.md#C)✅ | ★    | 2019.09.17 |                          |
+| 35   | [搜索插入位置](https://leetcode-cn.com/problems/search-insert-position/) | [Python](./20190917/20190917/readme.md#Python-1)✅ [C++](./20190917/20190917/readme.md#C-1)✅ | ★    | 2019.09.17 | 二分查找                 |
+| 53   | [最大子序和](https://leetcode-cn.com/problems/maximum-subarray/) | [Python](./20190917/20190918/readme.md#Python)✅ [C++](./20190917/20190918/readme.md#C)✅ | ★    | 2019.09.18 | 分治法、动态规划         |
+| 66   | [加一](https://leetcode-cn.com/problems/plus-one/)           | [Python](./20190917/20190918/readme.md#Python-1)✅ [C++](./20190917/20190918/readme.md#C-1)✅ | ★    | 2019.09.18 |                          |
+| 88   | [合并两个有序数组](https://leetcode-cn.com/problems/merge-sorted-array/) | [Python](./20190917/20190919/readme.md#Python)✅ [C++](./20190917/20190919/readme.md#C)✅ | ★    | 2019.09.19 | 双指针                   |
+| 118  | [杨辉三角](https://leetcode-cn.com/problems/pascals-triangle/) | [Python](./20190917/20190920/readme.md#Python)✅ [C++](./20190917/20190920/readme.md#C)✅ | ★    | 2019.09.20 | 动态规划，递归           |
+| 119  | [杨辉三角 II](https://leetcode-cn.com/problems/pascals-triangle-ii/) | [Python](./20190917/20190920/readme.md#Python-1)✅ [C++](./20190917/20190920/readme.md#C-1)✅ | ★    | 2019.09.20 | 公式法                   |
+| 121  | [买卖股票的最佳时机](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock/) | [Python](./20190917/20190921/readme.md#Python)✅ [C++](./20190917/20190921/readme.md#C)✅ | ★    | 2019.09.21 | 动态规划                 |
+| 122  | [买卖股票的最佳时机 II](https://leetcode-cn.com/problems/best-time-to-buy-and-sell-stock-ii/) | [Python](./20190917/20190921/readme.md#Python-1)✅ [C++](./20190917/20190921/readme.md#C-1)✅ | ★    | 2019.09.21 |                          |
+| 167  | [两数之和 II - 输入有序数组](https://leetcode-cn.com/problems/two-sum-ii-input-array-is-sorted/) | [Python](./20190917/20190921/readme.md#Python-2)✅ [C++](./20190917/20190921/readme.md#C-2)✅ | ★    | 2019.09.21 | 哈希表、双指针           |
+| 169  | [求众数](https://leetcode-cn.com/problems/majority-element/) | [Python](./20190917/20190921/readme.md#Python-3)✅ [C++](./20190917/20190921/readme.md#C-3)✅ | ★    | 2019.09.21 | 哈希表、排序法、投票算法 |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
 
 
 
