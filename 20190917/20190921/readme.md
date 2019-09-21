@@ -401,7 +401,7 @@ class Solution {
 
 ## [题目](https://leetcode-cn.com/problems/contains-duplicate/)
 
-## Python
+## [Python](./217.%20存在重复元素.py)
 
 ### 暴力法
 
@@ -440,7 +440,7 @@ class Solution:
 
 
 
-## C++
+## [C++](./217.%20存在重复元素.cc)
 
 ### 哈希法
 
@@ -470,6 +470,75 @@ class Solution {
         sort(nums.begin(), nums.end());
         for (auto i = 0; i < nums.size() - 1; i++) {
             if (nums[i] == nums[i + 1]) return true;
+        }
+        return false;
+    }
+};
+```
+
+
+
+# 219. 存在重复元素 II
+
+## [题目](https://leetcode-cn.com/problems/contains-duplicate-ii/)
+
+给定一个整数数组和一个整数 k，判断数组中是否存在两个不同的索引 i 和 j，使得 nums [i] = nums [j]，并且 i 和 j 的差的绝对值最大为 k。
+
+**示例** 1:
+
+> 输入: nums = [1,2,3,1], k = 3
+>
+> 输出: true
+
+**示例** 2:
+
+> 输入: nums = [1,0,1,1], k = 1
+>
+> 输出: true
+
+**示例** 3:
+
+> 输入: nums = [1,2,3,1,2,3], k = 2
+>
+> 输出: false
+
+## [Python](./219.%20存在重复元素%20II.py)
+
+### 哈希法
+
+```python
+class Solution:
+    def containsNearbyDuplicate(self, nums: [int], k: int) -> bool:
+        dic = {}
+        for index, num in enumerate(nums):
+            if num in dic:
+                if index - dic[num] <= k:
+                    return True
+                else:
+                    dic[num] = index
+            else:
+                dic[num] = index
+        return False
+```
+
+
+
+## [C++](./219.%20存在重复元素%20II.py)
+
+### 哈希法
+
+```c++
+class Solution {
+   public:
+    bool containsNearbyDuplicate(vector<int>& nums, int k) {
+        map<int, int> dic;
+        for (int i = 0; i < nums.size(); i++) {
+            if (dic.count(nums[i]) == 0) {
+                dic[nums[i]] = i;
+            } else {
+                if (i - dic[nums[i]] <= k) return true;
+                dic[nums[i]] = i;
+            }
         }
         return false;
     }
