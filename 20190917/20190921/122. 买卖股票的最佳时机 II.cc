@@ -1,7 +1,7 @@
 /*
- * Description: 买卖股票的最佳时机
+ * Description: 买卖股票的最佳时机 II
  * Author: AskeyNil
- * CreateDate: 2019-09-21 09:06:06
+ * CreateDate: 2019-09-21 19:48:59
  * LastEditors: AskeyNil
  *
  * *********************************
@@ -19,22 +19,16 @@
 
 using namespace std;
 
-// 从左往右推
 class Solution {
    public:
     int maxProfit(vector<int>& prices) {
         int length = prices.size();
-        if (length <= 1) {
-            return 0;
+        if (length <= 1) return 0;
+        int sum = 0, left = prices[0];
+        for (auto i = 1; i < length; i++) {
+            if (prices[i] > left) sum += prices[i] - left;
+            left = prices[i];
         }
-        int diff = 0, mini = prices[0];
-        for (int i = 0; i < length; i++) {
-            int temp = prices[i] - mini;
-            if (temp > diff)
-                diff = temp;
-            else if (temp < 0)
-                mini = prices[i];
-        }
-        return diff;
+        return sum;
     }
 };

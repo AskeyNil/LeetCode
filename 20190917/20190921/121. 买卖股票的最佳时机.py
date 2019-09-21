@@ -17,7 +17,7 @@ LastEditors: AskeyNil
 # class Solution:
 #     def maxProfit(self, prices: [int]) -> int:
 #         length = len(prices)
-#         if length == 0 or length == 1:
+#         if length <= 1:
 #             return 0
 #         large = prices[-1]
 #         diff = 0
