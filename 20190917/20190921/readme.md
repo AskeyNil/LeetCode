@@ -4,7 +4,7 @@
 
 ## [Python](./121.%20买卖股票的最佳时机.py)
 
-#### 动态规划
+### 动态规划
 
 从左往右规划
 
@@ -48,7 +48,7 @@ class Solution:
 
 ## [C++](./121.%20买卖股票的最佳时机.cc)
 
-#### 动态规划
+### 动态规划
 
 ``` c++
 class Solution {
@@ -73,7 +73,7 @@ class Solution {
 
 
 
-### 思路
+## 思路
 
 > 用原题的数组举例，从左到右遍历一遍，时间复杂度 o(n)
 >
@@ -169,7 +169,7 @@ class Solution {
 
 ## [Python](./167.%20两数之和%20II%20-%20输入有序数组.py)
 
-#### 哈希表
+### 哈希表
 
 ``` python
 class Solution:
@@ -185,9 +185,9 @@ class Solution:
 
 
 
-### [C++](./167.%20两数之和%20II%20-%20输入有序数组.cc)
+## [C++](./167.%20两数之和%20II%20-%20输入有序数组.cc)
 
-#### 双指针
+### 双指针
 
 ``` c++
 class Solution {
@@ -232,7 +232,7 @@ class Solution {
 
 ## [Python](./169.%20求众数.py)
 
-#### 一次哈希表
+### 一次哈希表
 
 ```python
 class Solution:
@@ -250,7 +250,7 @@ class Solution:
                 dic[num] = 1
 ```
 
-#### 排序法
+### 排序法
 
 ```python
 class Solution:
@@ -258,7 +258,7 @@ class Solution:
         return sorted(nums)[len(nums) // 2]
 ```
 
-#### *Boyer-Moore 投票算法*
+### *Boyer-Moore 投票算法*
 
 ```python
 class Solution:
@@ -274,25 +274,9 @@ class Solution:
 
 
 
-## [Python](./169.%20求众数.cc)
+## [C++](./169.%20求众数.cc)
 
-#### Boyer-Moore 投票算法
-
-```c++
-class Solution {
-   public:
-    int majorityElement(vector<int>& nums) {
-        int count = 0, candidate = nums[0];
-        for (auto num : nums) {
-            if (count == 0) candidate = num;
-            count += num == candidate ? 1 : -1;
-        }
-        return candidate;
-    }
-};
-```
-
-#### 一次哈希表
+### 一次哈希表
 
 ```c++
 class Solution {
@@ -309,6 +293,106 @@ class Solution {
             if (dic[num] > length / 2.0) return num;
         }
         return nums[0];
+    }
+};
+```
+
+### Boyer-Moore 投票算法
+
+```c++
+class Solution {
+   public:
+    int majorityElement(vector<int>& nums) {
+        int count = 0, candidate = nums[0];
+        for (auto num : nums) {
+            if (count == 0) candidate = num;
+            count += num == candidate ? 1 : -1;
+        }
+        return candidate;
+    }
+};
+```
+
+## 总结
+
+### [Boyer-Moore 投票算法](https://leetcode-cn.com/problems/majority-element/solution/qiu-zhong-shu-by-leetcode-2/)
+
+根据众数的特性，一定要多于数组中的一半的元素，那么如果众数为+1，其他为-1，则最终结果一定会大于 0，若为 0 则不是众数，不断排除，即可得到众数
+
+> 例子：
+>
+> ` [7, 7, 5, 7, 5, 1 | 5, 7 | 5, 5, 7, 7 | 7, 7, 7, 7]`
+>
+> 1. 从左边往右边开始遍历，遇到 7，我们将其假设为众数，
+> 2. 当遍历到`|`位置的时候，此时 count 为 0，我们将后面的 5 再次假设为众数
+> 3. 继续往后遍历，当 count 为 0时，便重新将下一个数设置为众数。
+> 4. 直到最后遍历出 7 为众数，此时 count > 0
+> 5. 因为众数的规则，最后总有 count > 0。
+
+# 189. 旋转数组
+
+## [题目](https://leetcode-cn.com/problems/rotate-array/)
+
+## [Python](./189.%20旋转数组.cc)
+
+### 插入法
+
+```python
+class Solution:
+    def rotate(self, nums: [int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        for _ in range(k):
+            n = nums.pop()
+            nums.insert(0, n)
+```
+
+### 切片法
+
+```python
+class Solution:
+    def rotate(self, nums: [int], k: int) -> None:
+        """
+        Do not return anything, modify nums in-place instead.
+        """
+        k %= len(nums)
+        nums[:] = nums[-k:] + nums[:-k]
+```
+
+
+
+## [C++](./189.%20旋转数组.cc)
+
+### 插入法
+
+```c++
+class Solution {
+   public:
+    void rotate(vector<int>& nums, int k) {
+        k %= nums.size();
+        for (int i = 0; i < k; i++) {
+            int temp = nums[nums.size() - 1];
+            nums.pop_back();
+            nums.insert(nums.begin(), temp);
+        }
+    }
+};
+```
+
+### 三次翻转
+
+```C++
+class Solution {
+   public:
+    void rotate(vector<int>& nums, int k) {
+        k %= nums.size();
+        // 全部翻转
+        reverse(nums.begin(), nums.end());
+        // 翻转前 k 个
+        reverse(nums.begin(), nums.begin() + k);
+        // 翻转剩余的
+        reverse(nums.begin() + k, nums.end());
     }
 };
 ```
