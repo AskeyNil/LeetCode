@@ -304,3 +304,69 @@ public:
 
 1. 第一次给所有数据应该出现在的位子做一个特定的标记
 2. 第二次遍历到查找没有标记的位子，该位置就是就是消失的数字
+
+
+
+# 485. 最大连续1的个数
+
+## [题目](https://leetcode-cn.com/problems/max-consecutive-ones/)
+
+给定一个二进制数组， 计算其中最大连续1的个数。
+
+**示例** 1:
+
+> **输入**: [1,1,0,1,1,1]
+>
+> **输出**: 3
+>
+> **解释**: 开头的两位和最后的三位都是连续1，所以最大连续1的个数是 3.
+
+**注意**：
+
+- 输入的数组只包含 0 和1。
+- 输入数组的长度是正整数，且不超过 10,000。
+
+
+
+## [Python](./485.%20最大连续1的个数.py)
+
+```python
+class Solution:
+    def findMaxConsecutiveOnes(self, nums: [int]) -> int:
+        max_length = 0
+        current_length = 0
+        for num in nums:
+            if num == 0:
+                if max_length < current_length:
+                    max_length = current_length
+                current_length = 0
+            else:
+                current_length += 1
+        if max_length < current_length:
+            max_length = current_length
+        return max_length
+```
+
+
+
+## [C++](./485.%20最大连续1的个数.cc)
+
+```c++
+class Solution {
+public:
+  int findMaxConsecutiveOnes(vector<int> &nums) {
+    int max = 0, current = 0;
+    for (int num : nums) {
+      if (num) {
+        current += 1;
+      } else {
+        if (current > max)
+          max = current;
+        current = 0;
+      }
+    }
+    return max > current ? max : current;
+  }
+};
+```
+
