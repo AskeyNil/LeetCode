@@ -153,3 +153,154 @@ public:
 };
 ```
 
+
+
+# 414. 第三大的数
+
+## [题目](https://leetcode-cn.com/problems/third-maximum-number/)
+
+给定一个非空数组，返回此数组中第三大的数。如果不存在，则返回数组中最大的数。要求算法时间复杂度必须是O(n)。
+
+**示例** 1:
+
+> **输入**: [3, 2, 1]
+>
+> **输出**: 1
+>
+> **解释**: 第三大的数是 1.
+
+**示例** 2:
+
+> **输入**: [1, 2]
+>
+> **输出**: 2
+>
+> **解释**: 第三大的数不存在, 所以返回最大的数 2 .
+
+**示例** 3:
+
+> **输入**: [2, 2, 3, 1]
+>
+> **输出**: 1
+>
+> **解释**: 注意，要求返回第三大的数，是指第三大且唯一出现的数。
+>
+> 存在两个值为2的数，它们都排第二。
+
+## [Python](./414.%20第三大的数.py)
+
+```python
+class Solution:
+    def thirdMax(self, nums: [int]) -> int:
+        nums = list(set(nums))
+        nums.sort()
+        if len(nums) >= 3:
+            return nums[-3]
+        else:
+            return nums[-1]
+```
+
+## [C++](./414.%20第三大的数.cc)
+
+```c++
+// 有三个指针分别表示第一大,第二大,第三大
+class Solution {
+public:
+  int thirdMax(vector<int> &nums) {
+    int *max_number = nullptr;
+    int *second_number = nullptr;
+    int *third_number = nullptr;
+    for (auto &num : nums) {
+      if (max_number == nullptr) {
+        max_number = &num;
+      } else if (num == *max_number) {
+        continue;
+      } else if (num > *max_number) {
+        third_number = second_number;
+        second_number = max_number;
+        max_number = &num;
+      } else if (second_number == nullptr) {
+        second_number = &num;
+      } else if (num == *second_number) {
+        continue;
+      } else if (num > *second_number) {
+        third_number = second_number;
+        second_number = &num;
+      } else if (third_number == nullptr) {
+        third_number = &num;
+      } else if (num > *third_number) {
+        third_number = &num;
+      }
+    }
+    return third_number != nullptr ? *third_number : *max_number;
+  }
+};
+```
+
+
+
+# 448. 找到所有数组中消失的数字
+
+## [题目](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/)
+
+给定一个范围在  1 ≤ a[i] ≤ n ( n = 数组大小 ) 的 整型数组，数组中的元素一些出现了两次，另一些只出现一次。
+
+找到所有在 [1, n] 范围之间没有出现在数组中的数字。
+
+您能在不使用额外空间且时间复杂度为O(n)的情况下完成这个任务吗? 你可以假定返回的数组不算在额外空间内。
+
+**示例**:
+
+> **输入**:
+>
+> [4,3,2,7,8,2,3,1]
+>
+> **输出**:
+>
+> [5,6]
+
+
+
+## [Python](./448.%20找到所有数组中消失的数字.py)
+
+```python
+class Solution:
+    def findDisappearedNumbers(self, nums: [int]) -> [int]:
+        rel = []
+        count = len(nums)
+        for index, num in enumerate(nums):
+            nums[(num - 1) % count] += count
+        for index, num in enumerate(nums):
+            if num <= count:
+                rel.append(index+1)
+
+```
+
+
+
+## [C++](./448.%20找到所有数组中消失的数字.cc)
+
+```c++
+class Solution {
+public:
+  vector<int> findDisappearedNumbers(vector<int> &nums) {
+    vector<int> v;
+    for (auto num : nums) {
+      nums[(num - 1) % nums.size()] += nums.size();
+    }
+    for (size_t i = 0; i < nums.size(); i++) {
+      if (nums[i] <= nums.size()) {
+        v.push_back(i + 1);
+      }
+    }
+    return v;
+  }
+};
+```
+
+## 总结
+
+该题采用两次遍历
+
+1. 第一次给所有数据应该出现在的位子做一个特定的标记
+2. 第二次遍历到查找没有标记的位子，该位置就是就是消失的数字

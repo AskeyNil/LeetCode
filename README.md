@@ -55,8 +55,8 @@
 | 219  | [存在重复元素 II](https://leetcode-cn.com/problems/contains-duplicate-ii/) | [Python](./20190917/20190921/readme.md#Python-6)✅ [C++](./20190917/20190921/readme.md#C-6)✅ | ★    | 2019.09.21 | 哈希表                   |
 | 268  | [缺失数字](https://leetcode-cn.com/problems/missing-number/) | [Python](./20190917/20190922/readme.md#Python)✅ [C++](./20190917/20190922/readme.md#C)✅ | ★    | 2019.09.22 | 排序法、位运算           |
 | 283  | [移动零](https://leetcode-cn.com/problems/move-zeroes/)      | [Python](./20190917/20190922/readme.md#Python-1)✅ [C++](./20190917/20190922/readme.md#C-1)✅ | ★    | 2019.09.22 | 双指针                   |
-|      |                                                              |                                                              |      |            |                          |
-|      |                                                              |                                                              |      |            |                          |
+| 414  | [第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [Python](./20190917/20190922/readme.md#Python-2)✅ [C++](./20190917/20190922/readme.md#C-2)✅ | ★    | 2019.09.22 |                          |
+| 448  | [找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/) | [Python](./20190917/20190922/readme.md#Python-3)✅ [C++](./20190917/20190922/readme.md#C-3)✅ | ★    | 2019.09.22 | 标记法                   |
 |      |                                                              |                                                              |      |            |                          |
 
 
