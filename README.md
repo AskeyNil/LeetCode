@@ -53,6 +53,7 @@
 | 189  | [旋转数组](https://leetcode-cn.com/problems/rotate-array/)   | [Python](./20190917/20190921/readme.md#Python-4)✅ [C++](./20190917/20190921/readme.md#C-4)✅ | ★    | 2019.09.21 |                          |
 | 217  | [存在重复元素](https://leetcode-cn.com/problems/contains-duplicate/) | [Python](./20190917/20190921/readme.md#Python-5)✅ [C++](./20190917/20190921/readme.md#C-5)✅ | ★    | 2019.09.21 | 哈希表、排序法           |
 | 219  | [存在重复元素 II](https://leetcode-cn.com/problems/contains-duplicate-ii/) | [Python](./20190917/20190921/readme.md#Python-6)✅ [C++](./20190917/20190921/readme.md#C-6)✅ | ★    | 2019.09.21 | 哈希表                   |
+| 268  | [缺失数字](https://leetcode-cn.com/problems/missing-number/) | [Python](./20190917/20190922/readme.md#Python)✅ [C++](./20190917/20190922/readme.md#C)✅ | ★    | 2019.09.22 | 排序法、位运算           |
 
 
 
