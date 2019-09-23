@@ -555,3 +555,175 @@ class Solution {
 };
 ```
 
+# 661. 图片平滑器
+
+## [题目](https://leetcode-cn.com/problems/image-smoother/)
+
+包含整数的二维矩阵 M 表示一个图片的灰度。你需要设计一个平滑器来让每一个单元的灰度成为平均灰度 (向下舍入) ，平均灰度的计算是周围的8个单元和它本身的值求平均，如果周围的单元格不足八个，则尽可能多的利用它们。
+
+示例 1:
+
+```
+输入:
+[[1, 1, 1],
+ [1, 0, 1],
+ [1, 1, 1]]
+输出:
+[[0, 0, 0],
+ [0, 0, 0],
+ [0, 0, 0]]
+解释:
+对于点 (0,0), (0,2), (2,0), (2,2): 平均(3/4) = 平均(0.75) = 0
+对于点 (0,1), (1,0), (1,2), (2,1): 平均(5/6) = 平均(0.83333333) = 0
+对于点 (1,1): 平均(8/9) = 平均(0.88888889) = 0
+```
+
+注意:
+
+1. 给定矩阵中的整数范围为 [0, 255]。
+2. 矩阵的长和宽的范围均为 [1, 150]。
+
+
+
+## [Python](./661.%20图片平滑器.py)
+
+```python
+class Solution:
+    def imageSmoother(self, M: [[int]]) -> [[int]]:
+        m_h = len(M)
+        m_v = len(M[0])
+        # 设置偏移数组
+        direction = [(-1, -1), (0, -1), (1, -1),
+                     (-1, 0), (0, 0), (1, 0),
+                     (-1, 1), (0, 1), (1, 1)]
+        re = []
+        for i, N in enumerate(M):
+            re.append([])
+            for j, n in enumerate(N):
+                sum_n = 0
+                count = 0
+                for h, v in direction:
+                    # 实际位置
+                    h1 = i + h
+                    if h1 < 0 or h1 >= m_h:
+                        continue
+                    v1 = j + v
+                    if v1 < 0 or v1 >= m_v:
+                        continue
+                    sum_n += M[h1][v1]
+                    count += 1
+                re[i].append(sum_n // count)
+        return re
+```
+
+
+
+## [C++](./661.%20图片平滑器.cc)
+
+```c++
+class Solution {
+  public:
+    vector<vector<int>> imageSmoother(vector<vector<int>> &M) {
+        int m_h = M.size(), m_v = M[0].size();
+        int direction[9][2] = {{-1, -1}, {0, -1}, {1, -1}, {-1, 0}, {0, 0},
+                               {1, 0},   {-1, 1}, {0, 1},  {1, 1}};
+        vector<vector<int>> vv;
+        for (size_t i = 0; i < m_h; i++) {
+            vector<int> v;
+            for (size_t j = 0; j < m_v; j++) {
+                int sum = 0, count = 0;
+                for (auto index : direction) {
+                    int h1 = i + index[0], v1 = j + index[1];
+                    if (h1 < 0 or h1 >= m_h or v1 < 0 or v1 >= m_v)
+                        continue;
+                    sum += M[h1][v1];
+                    count += 1;
+                }
+                v.push_back(sum / count);
+            }
+            vv.push_back(v);
+        }
+        return vv;
+    }
+};
+```
+
+## 总结
+
+该题设置了 9 个偏移量用来计算偏移位置，如果没有则不偏移，有则偏移取值，最后将取到的数据求平均即可
+
+```
+direction = [(-1, -1), (0, -1), (1, -1),
+             (-1,  0), (0,  0), (1,  0),
+             (-1,  1), (0,  1), (1,  1)]
+```
+
+
+
+# 665. 非递减数列
+
+## [题目](https://leetcode-cn.com/problems/non-decreasing-array/)
+
+给定一个长度为 n 的整数数组，你的任务是判断在最多改变 1 个元素的情况下，该数组能否变成一个非递减数列。
+
+我们是这样定义一个非递减数列的： 对于数组中所有的 i (1 <= i < n)，满足 array[i] <= array[i + 1]。
+
+示例 1:
+
+> 输入: [4,2,3]
+>
+> 输出: True
+>
+> 解释: 你可以通过把第一个4变成1来使得它成为一个非递减数列。
+
+示例 2:
+
+> 输入: [4,2,1]
+>
+> 输出: False
+>
+> 解释: 你不能在只改变一个元素的情况下将其变为非递减数列。
+
+说明:  n 的范围为 [1, 10,000]。
+
+## [Python](./665.%20非递减数列.py)
+
+```python
+class Solution:
+    def checkPossibility(self, nums: [int]) -> bool:
+        p = None
+        for index in range(len(nums) - 1):
+            if nums[index] > nums[index + 1]:
+                if p is not None:
+                    return False
+                p = i
+        return (p is None or p == 0 or p == len(nums) - 2 or nums[p-1] <= A[P+1] or nums[p] <= nums[p+2])
+```
+
+
+
+## [C++](./665.%20非递减数列.cc)
+
+```c++
+class Solution {
+  public:
+    bool checkPossibility(vector<int> &nums) {
+        int p = -1;
+        for (size_t i = 0; i < nums.size() - 1; i++) {
+            if (nums[i] > nums[i + 1]) {
+                if (p != -1)
+                    return false;
+                p = i;
+            }
+        }
+        return (p == -1 || p == 0 || p == nums.size() - 2 ||
+                nums[p - 1] <= nums[p + 1] || nums[p] <= nums[p + 2]);
+    }
+};
+```
+
+## 总结
+
+> 总的来说这题没理解
+>
+> 题解来自英文官网，第三种解法，判断所有可能为否的情况。

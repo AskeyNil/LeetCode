@@ -75,7 +75,8 @@
 | 605  | [种花问题](https://leetcode-cn.com/problems/can-place-flowers) | [Python](./20190917/20190923/readme.md#Python-5)✅ [C++](./20190917/20190923/readme.md#C-5)✅ | ★    | 2019.09.23 |                          |
 | 628  | [三个数的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-three-numbers) | [Python](./20190917/20190923/readme.md#Python-6)✅ [C++](./20190917/20190923/readme.md#C-6)✅ | ★    | 2019.09.23 |                          |
 | 643  | [子数组最大平均数 I](https://leetcode-cn.com/problems/maximum-average-subarray-i) | [Python](./20190917/20190923/readme.md#Python-7)✅ [C++](./20190917/20190923/readme.md#C-7)✅ | ★    | 2019.09.23 | 动态规划                 |
-| 661  | [图片平滑器](https://leetcode-cn.com/problems/image-smoother) |                                                              | ★    | 2019.09.23 |                          |
+| 661  | [图片平滑器](https://leetcode-cn.com/problems/image-smoother) | [Python](./20190917/20190923/readme.md#Python-8)✅ [C++](./20190917/20190923/readme.md#C-8)✅ | ★    | 2019.09.23 | 偏移标识                 |
+| 665  | [非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/) | [Python](./20190917/20190923/readme.md#Python-9)❎⁉️ [C++](./20190917/20190923/readme.md#C-9)❎⁉️ | ★    | 2019.09.23 |                          |
 
 
 
