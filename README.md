@@ -36,6 +36,15 @@
 ## 2019.09.17
 
 > 开始，[array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
+>
+> 查询个数 js `$(".reactable-data").children("tr").length`
+>
+> 截止 20190923 [array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
+>
+> 1. 总数：72
+> 2. 已做：21
+> 3. 上锁：8
+> 4. 剩余：43
 
 | #    | 题目                                                         | 题解                                                         | 难度 | 时间       | tag                      |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---------- | ------------------------ |
@@ -57,7 +66,17 @@
 | 283  | [移动零](https://leetcode-cn.com/problems/move-zeroes/)      | [Python](./20190917/20190922/readme.md#Python-1)✅ [C++](./20190917/20190922/readme.md#C-1)✅ | ★    | 2019.09.22 | 双指针                   |
 | 414  | [第三大的数](https://leetcode-cn.com/problems/third-maximum-number/) | [Python](./20190917/20190922/readme.md#Python-2)✅ [C++](./20190917/20190922/readme.md#C-2)✅ | ★    | 2019.09.22 |                          |
 | 448  | [找到所有数组中消失的数字](https://leetcode-cn.com/problems/find-all-numbers-disappeared-in-an-array/) | [Python](./20190917/20190922/readme.md#Python-3)✅ [C++](./20190917/20190922/readme.md#C-3)✅ | ★    | 2019.09.22 | 标记法                   |
-| 485  | [最大连续1的个数](https://leetcode-cn.com/problems/max-consecutive-ones/) | [Python](./20190917/20190922/readme.md#Python-4)✅ [C++](./20190917/20190922/readme.md#C-4)✅                                                             | ★    | 2019.09.22 |                          |
+| 485  | [最大连续1的个数](https://leetcode-cn.com/problems/max-consecutive-ones/) | [Python](./20190917/20190922/readme.md#Python-4)✅ [C++](./20190917/20190922/readme.md#C-4)✅ | ★    | 2019.09.22 |                          |
+| 509  | [斐波那契数](https://leetcode-cn.com/problems/fibonacci-number) | [Python](./20190917/20190923/readme.md#Python)✅ [C++](./20190917/20190923/readme.md#C)✅ | ★    | 2019.09.23 | 动态规划                 |
+| 532  | [数组中的K-diff数对](https://leetcode-cn.com/problems/k-diff-pairs-in-an-array) | [Python](./20190917/20190923/readme.md#Python-1)✅ [C++](./20190917/20190923/readme.md#C-1)✅ | ★    | 2019.09.23 | 哈希表                   |
+| 561  | [数组拆分 I](https://leetcode-cn.com/problems/array-partition-i) | [Python](./20190917/20190923/readme.md#Python-2)✅ [C++](./20190917/20190923/readme.md#C-2)✅ | ★    | 2019.09.23 | 排序法                   |
+| 566  | [重塑矩阵](https://leetcode-cn.com/problems/reshape-the-matrix) |[Python](./20190917/20190923/readme.md#Python-3)✅ [C++](./20190917/20190923/readme.md#C-3)✅ | ★    | 2019.09.23 |                          |
+| 581  | [最短无序连续子数组](https://leetcode-cn.com/problems/shortest-unsorted-continuous-subarray) |[Python](./20190917/20190923/readme.md#Python-4)✅ [C++](./20190917/20190923/readme.md#C-4)✅ | ★    | 2019.09.23 |                          |
+| 605  | [种花问题](https://leetcode-cn.com/problems/can-place-flowers) |                                                              | ★    | 2019.09.23 |                          |
+| 624  | [数组列表中的最大距离](https://leetcode-cn.com/problems/maximum-distance-in-arrays) |                                                              | ★    | 2019.09.23 |                          |
+| 628  | [三个数的最大乘积](https://leetcode-cn.com/problems/maximum-product-of-three-numbers) |                                                              | ★    | 2019.09.23 |                          |
+| 643  | [子数组最大平均数 I](https://leetcode-cn.com/problems/maximum-average-subarray-i) |                                                              | ★    | 2019.09.23 |                          |
+| 661  | [图片平滑器](https://leetcode-cn.com/problems/image-smoother) |                                                              | ★    | 2019.09.23 |                          |
 
 
 
