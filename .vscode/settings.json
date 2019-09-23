@@ -9,6 +9,7 @@
         "map": "cpp",
         "string_view": "cpp",
         "unordered_map": "cpp",
-        "set": "cpp"
+        "set": "cpp",
+        "string": "cpp"
     }
 }

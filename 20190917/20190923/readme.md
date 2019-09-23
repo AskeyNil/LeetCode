@@ -389,3 +389,169 @@ class Solution {
 };
 ```
 
+
+
+# 605. 种花问题
+
+## [题目](https://leetcode-cn.com/problems/can-place-flowers/)
+
+假设你有一个很长的花坛，一部分地块种植了花，另一部分却没有。可是，花卉不能种植在相邻的地块上，它们会争夺水源，两者都会死去。
+
+给定一个花坛（表示为一个数组包含0和1，其中0表示没种植花，1表示种植了花），和一个数 n 。能否在不打破种植规则的情况下种入 n 朵花？能则返回True，不能则返回False。
+
+示例 1:
+
+> 输入: flowerbed = [1,0,0,0,1], n = 1
+>
+> 输出: True
+
+示例 2:
+
+> 输入: flowerbed = [1,0,0,0,1], n = 2
+>
+> 输出: False
+
+注意:
+
+1. 数组内已种好的花不会违反种植规则。
+2. 输入的数组长度范围为 [1, 20000]。
+3. n 是非负整数，且不会超过输入数组的大小。
+
+
+
+## [Python](./605.%20种花问题.py)
+
+```python
+class Solution:
+    def canPlaceFlowers(self, flowerbed: [int], n: int) -> bool:
+        reset = 1
+        for bed in flowerbed:
+            if bed == 1:
+                reset = 0
+            else:
+                if reset == 2:
+                    n -= 1
+                    reset = 1
+                else:
+                    reset += 1
+        if reset == 2:
+            n -= 1
+        return n <= 0
+```
+
+
+
+## [C++](./605.%20种花问题.cc)
+
+```c++
+class Solution {
+  public:
+    bool canPlaceFlowers(vector<int> &flowerbed, int n) {
+        int reset = 1;
+        for (auto bed : flowerbed) {
+            if (bed == 1)
+                reset = 0;
+            else {
+                if (reset == 2) {
+                    n -= 1;
+                    reset = 1;
+                } else {
+                    reset += 1;
+                }
+            }
+        }
+        if (reset == 2) {
+            n -= 1;
+        }
+        return n <= 0;
+    }
+};
+```
+
+
+
+# 628. 三个数的最大乘积
+
+## [题目](https://leetcode-cn.com/problems/maximum-product-of-three-numbers/)
+
+## [Python](./628.%20三个数的最大乘积.py)
+
+```python
+class Solution:
+    def maximumProduct(self, nums: [int]) -> int:
+        # 排序 取最后三个相乘
+        nums.sort()
+        max_number = nums[-1] * nums[-2] * nums[-3]
+        min_number = nums[0] * nums[1] * nums[-1]
+        return max_number if max_number > min_number else min_number
+```
+
+
+
+## [C++](./628.%20三个数的最大乘积.cc)
+
+```c++
+class Solution {
+  public:
+    int maximumProduct(vector<int> &nums) {
+        sort(nums.begin(), nums.end());
+        int max_number = nums[nums.size() - 1] * nums[nums.size() - 2] *
+                         nums[nums.size() - 3];
+        int min_number = nums[nums.size() - 1] * nums[0] * nums[1];
+        return max_number > min_number ? max_number : min_number;
+    }
+};
+```
+
+
+
+# 643. 子数组最大平均数 I
+
+## [题目](https://leetcode-cn.com/problems/maximum-average-subarray-i/)
+
+## [Python](./643.%20子数组最大平均数%20I.py)
+
+```python
+class Solution:
+    def findMaxAverage(self, nums: [int], k: int) -> float:
+        max_aver = None
+        left = None
+        for index in range(len(nums) - k + 1):
+            if max_aver != None:
+                aver = aver - left + nums[index + k - 1]
+                if max_aver < aver:
+                    max_aver = aver
+            else:
+                aver = sum(nums[index: index + k])
+                max_aver = aver
+            left = nums[index]
+        return max_aver / k
+```
+
+
+
+## [C++](./643.%20子数组最大平均数%20I.cc)
+
+```c++
+class Solution {
+  public:
+    double findMaxAverage(vector<int> &nums, int k) {
+        int max_aver = INT_MIN, left = INT_MIN, aver = 0;
+        for (int i = 0; i < nums.size() - k + 1; i++) {
+            if (max_aver != INT_MIN) {
+                aver = aver - left + nums[i + k - 1];
+                if (max_aver < aver)
+                    max_aver = aver;
+            } else {
+                for (int j = i; j < i + k; j++) {
+                    aver += nums[j];
+                }
+                max_aver = aver;
+            }
+            left = nums[i];
+        }
+        return double(max_aver) / k;
+    }
+};
+```
+
