@@ -37,7 +37,13 @@
 
 > 开始，[array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 >
-> 查询个数 js `$(".reactable-data").children("tr").length`
+> 查询总个数 js `$(".reactable-data").children("tr").length`
+>
+> 查询已做个数`$(".text-success.fa.fa-check").length`
+>
+> 查询上锁个数`$(".fa.fa-lock").length-1`
+>
+> 未做的个数`$(".reactable-data").children("tr").length-$(".text-success.fa.fa-check").length-$(".fa.fa-lock").length+1`
 >
 > 截止 20190923 [array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 >
