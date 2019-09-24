@@ -47,9 +47,9 @@
 > 截止 20190923 [array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 >
 > 1. 总数：72
-> 2. 已做：36
+> 2. 已做：<p id='finish'></p>
 > 3. 上锁：8
-> 4. 剩余：28
+> 4. 剩余：<p id='remaining'><p>
 
 | #    | 题目                                                         | 题解                                                         | 难度 | 时间       | tag                      |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---------- | ------------------------ |
@@ -88,7 +88,13 @@
 | 724  | [寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index) | [Python](./20190917/20190924/readme.md#Python-3)✅ [C++](./20190917/20190924/readme.md#C-3)✅ | ★    | 2019.09.24 |                          |
 | 746  | [使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs) | [Python](./20190917/20190924/readme.md#Python-4)✅ [C++](./20190917/20190924/readme.md#C-4)✅ | ★    | 2019.09.24 | 动态规划                 |
 
-
+<script>
+var finish = document.getElementById("finish");
+var finish_count = document.getElementsByTagName("tr").length + 2
+finish.innerHTML = finish_count;
+var remaining = document.getElementById("remaining");
+remaining.innerHTML = 72 - 8 - finish_count;
+</script>
 
 ## 2019.09
 
