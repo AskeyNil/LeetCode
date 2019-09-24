@@ -83,6 +83,11 @@
 | 643  | [子数组最大平均数 I](https://leetcode-cn.com/problems/maximum-average-subarray-i) | [Python](./20190917/20190923/readme.md#Python-7)✅ [C++](./20190917/20190923/readme.md#C-7)✅ | ★    | 2019.09.23 | 动态规划                 |
 | 661  | [图片平滑器](https://leetcode-cn.com/problems/image-smoother) | [Python](./20190917/20190923/readme.md#Python-8)✅ [C++](./20190917/20190923/readme.md#C-8)✅ | ★    | 2019.09.23 | 偏移标识                 |
 | 665  | [非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/) | [Python](./20190917/20190923/readme.md#Python-9)❎⁉️ [C++](./20190917/20190923/readme.md#C-9)❎⁉️ | ★    | 2019.09.23 |                          |
+| 674  | [最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/) | [Python](./20190917/20190924/readme.md#Python)✅ [C++](./20190917/20190924/readme.md#C)✅| ★    | 2019.09.24 |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
 
 
 
