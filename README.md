@@ -85,7 +85,7 @@
 | 665  | [非递减数列](https://leetcode-cn.com/problems/non-decreasing-array/) | [Python](./20190917/20190923/readme.md#Python-9)❎⁉️ [C++](./20190917/20190923/readme.md#C-9)❎⁉️ | ★    | 2019.09.23 |                          |
 | 674  | [最长连续递增序列](https://leetcode-cn.com/problems/longest-continuous-increasing-subsequence/) | [Python](./20190917/20190924/readme.md#Python)✅ [C++](./20190917/20190924/readme.md#C)✅ | ★    | 2019.09.24 |                          |
 | 697  | [数组的度](https://leetcode-cn.com/problems/degree-of-an-array/) | [Python](./20190917/20190924/readme.md#Python-1)✅ [C++](./20190917/20190924/readme.md#C-1)✅ | ★    | 2019.09.24 |                          |
-| 717  | [1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters) |                                                              | ★    | 2019.09.24 |                          |
+| 717  | [1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters) | [Python](./20190917/20190924/readme.md#Python-2)✅ [C++](./20190917/20190924/readme.md#C-2)✅ | ★    | 2019.09.24 |                          |
 | 724  | [寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index) |                                                              | ★    | 2019.09.24 |                          |
 | 746  | [使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs) |                                                              | ★    | 2019.09.24 |                          |
 
