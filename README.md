@@ -87,6 +87,11 @@
 | 717  | [1比特与2比特字符](https://leetcode-cn.com/problems/1-bit-and-2-bit-characters) | [Python](./20190917/20190924/readme.md#Python-2)✅ [C++](./20190917/20190924/readme.md#C-2)✅ | ★    | 2019.09.24 |                          |
 | 724  | [寻找数组的中心索引](https://leetcode-cn.com/problems/find-pivot-index) | [Python](./20190917/20190924/readme.md#Python-3)✅ [C++](./20190917/20190924/readme.md#C-3)✅ | ★    | 2019.09.24 |                          |
 | 746  | [使用最小花费爬楼梯](https://leetcode-cn.com/problems/min-cost-climbing-stairs) | [Python](./20190917/20190924/readme.md#Python-4)✅ [C++](./20190917/20190924/readme.md#C-4)✅ | ★    | 2019.09.24 | 动态规划                 |
+| 747  | [至少是其他数字两倍的最大数](https://leetcode-cn.com/problems/largest-number-at-least-twice-of-others/) | [Python](./20190917/20190925/readme.md#Python)✅ [C++](./20190917/20190925/readme.md#C)✅ | ★    | 2019.09.25 |                          |
+| 766  | [托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix/) | [Python](./20190917/20190925/readme.md#Python-1)✅ [C++](./20190917/20190925/readme.md#C-1)✅ | ★    | 2019.09.25 |                          |
+| 830  | [较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups/) | [Python](./20190917/20190925/readme.md#Python-2)✅ [C++](./20190917/20190925/readme.md#C-2)✅ | ★    | 2019.09.25 |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
 
 
 
