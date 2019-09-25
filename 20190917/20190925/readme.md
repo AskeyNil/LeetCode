@@ -253,3 +253,56 @@ class Solution {
 };
 ```
 
+
+
+# 832. 翻转图像
+
+## [题目](https://leetcode-cn.com/problems/flipping-an-image/)
+
+## [Python](./832.%20翻转图像.py)
+
+```python
+class Solution:
+    def flipAndInvertImage(self, A: [[int]]) -> [[int]]:
+        arr = [[0 for _ in range(len(A))] for _ in range(len(A))]
+        i = 0
+        for N in A:
+            j = 0
+            for n in N[::-1]:
+                if n == 0:
+                    arr[i][j] = 1
+                j += 1
+            i += 1
+        return arr
+```
+
+
+
+## [C++](./832.%20翻转图像.cc)
+
+### 交换法
+
+```c++
+// 交换法
+class Solution {
+  public:
+    vector<vector<int>> flipAndInvertImage(vector<vector<int>> &A) {
+        int size = A.size();
+        for (auto &v : A) {
+            for (size_t i = 0; i < (size + 1) / 2; i++) {
+                if (v[i] == v[size - i - 1]) {
+                    v[i] = 1 ^ v[i];
+                    v[size - i - 1] = v[i];
+                }
+            }
+        }
+        return A;
+    }
+};
+```
+
+## 分析
+
+1. 判断每行要交换的元素是否相等
+2. 如果不相等，则不要进行任何操作
+3. 如果相等，元素取异或即可。

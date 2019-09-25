@@ -47,9 +47,9 @@
 > 截止 20190923 [array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 >
 > 1. 总数：72
-> 2. 已做：36
+> 2. 已做：41
 > 3. 上锁：8
-> 4. 剩余：28
+> 4. 剩余：23
 
 | #    | 题目                                                         | 题解                                                         | 难度 | 时间       | tag                      |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---------- | ------------------------ |
@@ -90,8 +90,8 @@
 | 747  | [至少是其他数字两倍的最大数](https://leetcode-cn.com/problems/largest-number-at-least-twice-of-others/) | [Python](./20190917/20190925/readme.md#Python)✅ [C++](./20190917/20190925/readme.md#C)✅ | ★    | 2019.09.25 |                          |
 | 766  | [托普利茨矩阵](https://leetcode-cn.com/problems/toeplitz-matrix/) | [Python](./20190917/20190925/readme.md#Python-1)✅ [C++](./20190917/20190925/readme.md#C-1)✅ | ★    | 2019.09.25 |                          |
 | 830  | [较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups/) | [Python](./20190917/20190925/readme.md#Python-2)✅ [C++](./20190917/20190925/readme.md#C-2)✅ | ★    | 2019.09.25 |                          |
-|      |                                                              |                                                              |      |            |                          |
-|      |                                                              |                                                              |      |            |                          |
+| 832  | [翻转图像](https://leetcode-cn.com/problems/flipping-an-image/) | [Python](./20190917/20190925/readme.md#Python-3)✅ [C++](./20190917/20190925/readme.md#C-3)✅ | ★    | 2019.09.25 |                          |
+| 840  | [矩阵中的幻方](https://leetcode-cn.com/problems/magic-squares-in-grid/) |                                                              | ★    | 2019.09.25 | 暴力法 无意义            |
 
 
 
