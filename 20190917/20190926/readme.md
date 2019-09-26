@@ -260,3 +260,82 @@ class Solution {
 };
 ```
 
+# 905. 按奇偶排序数组
+
+## [题目](https://leetcode-cn.com/problems/sort-array-by-parity/)
+
+给定一个非负整数数组 `A`，返回一个数组，在该数组中， `A` 的所有偶数元素之后跟着所有奇数元素。
+
+你可以返回满足此条件的任何数组作为答案。
+
+示例：
+
+```
+输入：[3,1,2,4]
+输出：[2,4,3,1]
+输出 [4,2,3,1]，[2,4,1,3] 和 [4,2,1,3] 也会被接受。
+```
+
+**提示：**
+
+1. `1 <= A.length <= 5000`
+2. `0 <= A[i] <= 5000`
+
+## [Python](./905.%20按奇偶排序数组.py)
+
+### 双指针
+
+```python
+class Solution:
+    def sortArrayByParity(self, A: [int]) -> [int]:
+        left = 0
+        right = len(A) - 1
+        while left < right:
+            is_left = A[left] % 2 == 0
+            is_right = A[right] % 2 == 0
+            if is_left and is_right:  # 左右都是偶数
+                left += 1
+            elif is_left and not is_right:  # 左边是偶数 右边是奇数
+                left += 1
+                right -= 1
+            elif not is_left and is_right:  # 左边是奇数 右边是偶数
+                A[left], A[right] = A[right], A[left]
+                left += 1
+                right -= 1
+            else:
+                right -= 1
+        return A
+```
+
+
+
+## [C++](./905.%20按奇偶排序数组.cc)
+
+### 双指针
+
+```c++
+class Solution {
+  public:
+    vector<int> sortArrayByParity(vector<int> &A) {
+        int left = 0, right = A.size() - 1;
+        while (left < right) {
+            bool is_left = A[left] % 2 == 0;
+            bool is_right = A[right] % 2 == 0;
+            if (is_left && is_right) {
+                left += 1;
+            } else if (is_left && !is_right) {
+                left += 1, right -= 1;
+            } else if (!is_left && is_right) {
+                A[left] = A[left] + A[right];
+                A[right] = A[left] - A[right];
+                A[left] = A[left] - A[right];
+                left += 1, right -= 1;
+            } else {
+                right -= 1;
+            }
+        }
+        return A;
+    }
+};
+```
+
