@@ -92,6 +92,11 @@
 | 830  | [较大分组的位置](https://leetcode-cn.com/problems/positions-of-large-groups/) | [Python](./20190917/20190925/readme.md#Python-2)✅ [C++](./20190917/20190925/readme.md#C-2)✅ | ★    | 2019.09.25 |                          |
 | 832  | [翻转图像](https://leetcode-cn.com/problems/flipping-an-image/) | [Python](./20190917/20190925/readme.md#Python-3)✅ [C++](./20190917/20190925/readme.md#C-3)✅ | ★    | 2019.09.25 |                          |
 | 840  | [矩阵中的幻方](https://leetcode-cn.com/problems/magic-squares-in-grid/) |                                                              | ★    | 2019.09.25 | 暴力法 无意义            |
+| 849  | [到最近的人的最大距离](https://leetcode-cn.com/problems/maximize-distance-to-closest-person/) | [Python](./20190917/20190926/readme.md#Python)✅ [C++](./20190917/20190926/readme.md#C)✅ | ★    | 2019.09.25 |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
+|      |                                                              |                                                              |      |            |                          |
 
 
 
