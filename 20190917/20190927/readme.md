@@ -1,5 +1,7 @@
 #914. 卡牌分组
+
 ##[题目](https://leetcode-cn.com/problems/x-of-a-kind-in-a-deck-of-cards/)
+
 <p>给定一副牌，每张牌上都写着一个整数。</p>
 <p>此时，你需要选定一个数字 <code>X</code>，使我们可以将整副牌按下述规则分成 1 组或更多组：</p>
 <ul>
@@ -48,8 +50,11 @@
 </ol>
 
 <p>&nbsp;</p>
+
 ##[Python](./914.%20卡牌分组.py)
+
 ``` python
+
 class Solution:
     def hasGroupsSizeX(self, deck):
         dic = {}
@@ -66,10 +71,15 @@ class Solution:
             else:
                 g = self.gcd(g, v)
         return g >= 2
+
+
 ```
 
+
 ##[C++](./914.%20卡牌分组.cc)
+
 ``` c++
+
 class Solution {
   public:
     bool hasGroupsSizeX(vector<int> &deck) {
@@ -89,5 +99,7 @@ class Solution {
     // 辗转相除法 获取最大公约数
     int gcd(int x, int y) { return x == 0 ? y : gcd(y % x, x); }
 };
+
 ```
+
 
