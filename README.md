@@ -102,6 +102,9 @@
 | 941  | [有效的山脉数组](https://leetcode-cn.com/problems/valid-mountain-array/) | [Python](./20190917/20190928/readme.md#Python)✅ [C++](./20190917/20190928/readme.md#C)✅ | ★    | 2019.09.28 |                          |
 | 977  | [有序数组的平方](https://leetcode-cn.com/problems/squares-of-a-sorted-array/) | [Python](./20190917/20190928/readme.md#Python-1)✅ [C++](./20190917/20190928/readme.md#C-1)✅ | ★    | 2019.09.28 |                          |
 | 985  | [查询后的偶数和](https://leetcode-cn.com/problems/sum-of-even-numbers-after-queries/) | [Python](./20190917/20190928/readme.md#Python-2)✅ [C++](./20190917/20190928/readme.md#C-2)✅ | ★    | 2019.09.28 |                          |
+| 989  | [数组形式的整数加法](https://leetcode-cn.com/problems/add-to-array-form-of-integer/) | [Python](./20190917/20190928/readme.md#Python-3)✅ [C++](./20190917/20190928/readme.md#C-3)✅ | ★    | 2019.09.28 |                          |
+| 999  | [车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/) | [Python](./20190917/20190928/readme.md#Python-4)✅ [C++](./20190917/20190928/readme.md#C-4)✅ | ★    | 2019.09.28 |                          |
+| 1002 | [查找常用字符](https://leetcode-cn.com/problems/find-common-characters/) | [Python](./20190917/20190928/readme.md#Python-5)✅ [C++](./20190917/20190928/readme.md#C-5)✅ | ★    | 2019.09.28 |                          |
 
 
 

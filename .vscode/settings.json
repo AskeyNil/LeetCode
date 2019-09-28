@@ -13,6 +13,8 @@
         "string": "cpp",
         "numeric": "cpp",
         "complex": "cpp",
-        "cmath": "cpp"
+        "cmath": "cpp",
+        "iosfwd": "cpp",
+        "utility": "cpp"
     }
 }
