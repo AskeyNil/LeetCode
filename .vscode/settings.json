@@ -11,6 +11,8 @@
         "unordered_map": "cpp",
         "set": "cpp",
         "string": "cpp",
-        "numeric": "cpp"
+        "numeric": "cpp",
+        "complex": "cpp",
+        "cmath": "cpp"
     }
 }
