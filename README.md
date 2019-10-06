@@ -32,7 +32,7 @@
 > 且开始用 Python 和 C++ 两种语言
 
 
-## 2019.09.17
+## 2019.10
 
 > 开始，[array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 >
@@ -44,12 +44,26 @@
 >
 > 未做的个数`$(".reactable-data").children("tr").length-$(".text-success.fa.fa-check").length-$(".fa.fa-lock").length+1`
 >
-> 截止 20190923 [array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
+> 截止 2019.10.6 [array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 >
 > 1. 总数：72
-> 2. 已做：46
+> 2. 已做：54
 > 3. 上锁：8
-> 4. 剩余：18
+> 4. 剩余：10
+
+| #    | 题目 | 题解 | 难度 | 时间 | tag  |
+| ---- | ---- | ---- | ---- | ---- | ---- |
+|      |      |      |      |      |      |
+|      |      |      |      |      |      |
+|      |      |      |      |      |      |
+|      |      |      |      |      |      |
+
+### 未做的原因
+
+1. 2019.10.01-2019.10.06
+   - 国庆 7 天乐
+
+## 2019.09.17
 
 | #    | 题目                                                         | 题解                                                         | 难度 | 时间       | tag                      |
 | ---- | ------------------------------------------------------------ | ------------------------------------------------------------ | ---- | ---------- | ------------------------ |
@@ -106,7 +120,12 @@
 | 999  | [车的可用捕获量](https://leetcode-cn.com/problems/available-captures-for-rook/) | [Python](./20190917/20190928/readme.md#Python-4)✅ [C++](./20190917/20190928/readme.md#C-4)✅ | ★    | 2019.09.28 |                          |
 | 1002 | [查找常用字符](https://leetcode-cn.com/problems/find-common-characters/) | [Python](./20190917/20190928/readme.md#Python-5)✅ [C++](./20190917/20190928/readme.md#C-5)✅ | ★    | 2019.09.28 |                          |
 
+### 未做的原因
 
+1. 2019.09.29
+   - 上午一直在研究 map 的时间复杂度问题，下午回家心切。。
+2. 2019.09.30
+   - 上午帮我哥布置了婚房，下午去抚州接人，晚上才回，导致未做。
 
 ## 2019.09
 
