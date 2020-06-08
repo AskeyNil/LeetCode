@@ -43,7 +43,7 @@
 
 | #    | 题目                                                         | 题解 | 难度 | 时间       | tag  |
 | ---- | ------------------------------------------------------------ | ---- | ---- | ---------- | ---- |
-| 1010 | [总持续时间可被 60 整除的歌曲](https://leetcode-cn.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [Python](./202006/20200608/readme.md#Python)✅ [C++](./202006/20200608/readme.md#C) | ★    | 2020.06.08 |      |
+| 1010 | [总持续时间可被 60 整除的歌曲](https://leetcode-cn.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [Python](./202006/20200608/readme.md#Python)✅ [C++](./202006/20200608/readme.md#C)✅ | ★    | 2020.06.08 |      |
 
 
 
