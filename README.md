@@ -15,6 +15,31 @@
 
 
 
+>查询总个数 js `$(".reactable-data").children("tr").length`
+>
+>查询已做个数`$(".text-success.fa.fa-check").length`
+>
+>查询上锁个数`$(".fa.fa-lock").length-1`
+>
+>未做的个数`$(".reactable-data").children("tr").length-$(".text-success.fa.fa-check").length-$(".fa.fa-lock").length+1`
+
+
+# 2020.08.21
+> 无视下面的一天一题。太忙了，有时候一天一题真的难。目前在调试 vscode leetcode 插件和每日一题。准备使用该方式，实现每日一题。
+
+
+# 2020.05.08
+
+> 时隔半年，恢复刷题，一天一题。
+
+
+
+| #    | 题目                                                         | 题解 | 难度 | 时间       | tag  |
+| ---- | ------------------------------------------------------------ | ---- | ---- | ---------- | ---- |
+| 1010 | [总持续时间可被 60 整除的歌曲](https://leetcode-cn.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [Python](./202006/20200608/readme.md#Python)✅ [C++](./202006/20200608/readme.md#C)✅ | ★    | 2020.06.08 |      |
+
+
+
 > 2019.09.17 记
 >
 > 根据前段时间按顺序刷题的自我反馈与认识，感觉刷题过于混乱且无效率，做一些计划整理
@@ -33,22 +58,6 @@
 
 
 
-
-
-# 2020.05.08
-
-> 时隔半年，恢复刷题，一天一题。
-
-
-
-| #    | 题目                                                         | 题解 | 难度 | 时间       | tag  |
-| ---- | ------------------------------------------------------------ | ---- | ---- | ---------- | ---- |
-| 1010 | [总持续时间可被 60 整除的歌曲](https://leetcode-cn.com/problems/pairs-of-songs-with-total-durations-divisible-by-60/) | [Python](./202006/20200608/readme.md#Python)✅ [C++](./202006/20200608/readme.md#C)✅ | ★    | 2020.06.08 |      |
-
-
-
-
-
 # 2019.10.07
 
 > 接下来比较忙，暂时暂停刷题。。
@@ -58,14 +67,6 @@
 ## 2019.10
 
 > 开始，[array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
->
-> 查询总个数 js `$(".reactable-data").children("tr").length`
->
-> 查询已做个数`$(".text-success.fa.fa-check").length`
->
-> 查询上锁个数`$(".fa.fa-lock").length-1`
->
-> 未做的个数`$(".reactable-data").children("tr").length-$(".text-success.fa.fa-check").length-$(".fa.fa-lock").length+1`
 >
 > 截止 2019.10.6 [array and easy](https://leetcode-cn.com/problemset/all/?topicSlugs=array&difficulty=%E7%AE%80%E5%8D%95)
 >
